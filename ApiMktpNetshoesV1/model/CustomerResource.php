@@ -14,7 +14,8 @@ class CustomerResource implements ArrayAccess {
       'trade_name' => 'string',
       'cell_phone' => 'string',
       'landline' => 'string',
-      'receiver_name' => 'string'
+      'receiver_name' => 'string',
+      'address'  => 'CustomerAddressResource'
   );
 
   static $attributeMap = array(
@@ -25,7 +26,8 @@ class CustomerResource implements ArrayAccess {
       'trade_name' => 'tradeName',
       'cell_phone' => 'cellPhone',
       'landline' => 'landline',
-      'receiver_name' => 'receiverName'
+      'receiver_name' => 'receiverName',
+      'address'  => 'address'
   );
 
   
@@ -37,6 +39,7 @@ class CustomerResource implements ArrayAccess {
   public $cell_phone; /* string */
   public $landline; /* string */
   public $receiver_name; /* string */
+  public $address; /* CustomerAddressResource */
 
   public function __construct(array $data = null) {
     $this->document = $data["document"];
