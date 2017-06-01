@@ -1,6 +1,9 @@
 <?php
 
 namespace ApiMktpNetshoesV1;
+use ApiMktpNetshoesV1\client\ApiClient;
+use ApiMktpNetshoesV1\client\ApiException;
+use ApiMktpNetshoesV1\client\Configuration;
 
 class ProductsApi {
 

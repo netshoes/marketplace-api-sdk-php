@@ -37,7 +37,7 @@ class OrderResource implements ArrayAccess {
       'total_quantity' => 'totalQuantity',
       'origin_site' => 'originSite',
       'business_unit' => 'businessUnit',
-      'status' => 'status',
+      'status' => 'orderStatus',
       'order_type' => 'orderType',
       'devolution_requested' => 'devolutionRequested',
       'exchange_requested' => 'exchangeRequested',
